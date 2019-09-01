@@ -63,3 +63,22 @@ $ vi /etc/ansible/hosts
       - ridhi.log
 
 ```
+
+### Create multiple file with mode 
+
+```
+---
+- hosts: all
+  become: True
+  tasks:
+    - name: create multiple file with mode
+      file:
+        path: "/home/ec2-user/{{ item.location }}"
+        state: touch
+        mode: "{{ item.mode }}"
+      with_items:
+      - { location: 'new1.txt' , mode: '600' }
+      - { location: 'new2.txt' , mode: '600' }
+
+````
+
