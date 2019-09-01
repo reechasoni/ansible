@@ -18,3 +18,8 @@ $ vi new.yml
 $ ansible-playbook new.yml
 ```
 
+### in hosts file mention the below things
+$ vi /etc/ansible/hosts
+```
+172.31.13.82 ansible_user=ec2-user ansible_ssh_private_key_file=~/dev.pem ansible_connection=ssh
+```
