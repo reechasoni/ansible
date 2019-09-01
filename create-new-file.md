@@ -64,7 +64,7 @@ $ vi /etc/ansible/hosts
 
 ```
 
-### Create multiple file with mode 
+### Create multiple file with mode i.e using ansible loops ( with_items )
 
 ```
 ---
