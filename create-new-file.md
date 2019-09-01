@@ -44,3 +44,22 @@ $ vi /etc/ansible/hosts
 ...
 
 ```
+
+### To create multiple files using ansible playbook
+
+```
+---
+- hosts: all
+  become: True
+  tasks:
+    - name: create multiple files
+      file:
+        path: "/home/ec2-user/{{ item }}"
+        state: touch
+        mode: 600
+      with_items:
+      - acees.log
+      - test.log
+      - ridhi.log
+
+```
