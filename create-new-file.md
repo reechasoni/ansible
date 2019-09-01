@@ -1,4 +1,6 @@
 ### To create a new file using playbook
+
+$ vi new.yml
 ```
 ---
 - hosts: all
@@ -11,4 +13,8 @@
 ...
 ```
 
+### To run the ansible playbook
+```
+$ ansible-playbook new.yml
+```
 
