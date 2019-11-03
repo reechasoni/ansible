@@ -22,3 +22,8 @@ On the managed nodes, you need a way to communicate, which is normally ssh. By d
 
 You also need Python 2 (version 2.6 or later) or Python 3 (version 3.5 or later).
 
+https://docs.ansible.com/ansible/latest/index.html
+
+https://docs.ansible.com/ansible/latest/dev_guide/testing/sanity/index.html
+
+
